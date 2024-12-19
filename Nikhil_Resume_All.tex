@@ -1,0 +1,342 @@
+%-------------------------
+% Resume in Latex
+% Author: Nikhil Parmar
+% License : MIT
+%------------------------
+
+%---- Required Packages and Functions ----
+
+\documentclass[letterpaper,10.8pt]{article}
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+\usepackage[most]{tcolorbox}
+\tcbset{
+	frame code={}
+	center title,
+	left=0pt,
+	right=0pt,
+	top=0pt,
+	bottom=0pt,
+	colback=gray!20,
+	colframe=white,
+	width=\dimexpr\textwidth\relax,
+	enlarge left by=-2mm,
+	boxsep=4pt,
+	arc=0pt,outer arc=0pt,
+}
+
+\urlstyle{same}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+% \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=0mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{justify}\begin{itemize}[leftmargin=3ex, rightmargin=2ex, noitemsep,labelsep=1.2mm,itemsep=0mm]\small}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\end{justify}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+%---- End of Packages and Functions ------
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%
+%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\newcommand{\name}{Nikhil Mahesh Parmar} % Your Name
+\newcommand{\course}{Your Program} % Your Program
+\newcommand{\linkedin}{https://www.linkedin.com/in/nikhil-parmar-923875202/} 
+\newcommand{\emaila}{nikhil\_parmar@hotmail.com} %Email 1
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------HEADING-----------------
+{
+\begin{tabularx}{\linewidth}{L@{\extracolsep{\fill}}r} \\
+  \textbf{\Large \name} & {\raisebox{0.0\height}{Mobile: }\ +44(0)7305925020}\\
+  {\small LinkedIn: \linkedin} & \href{mailto:\emaila}{\raisebox{0.0\height}{Email: }\ {\emaila}} \\
+\end{tabularx}
+}
+\vspace{-3mm}
+% \parbox{0.0cm}{%https://www.overleaf.com/project/63ee29d95f11ab5f3600de70
+% \flushright \includegraphics[width=0cm,clip]{nitp_logo.png}
+% }
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {  University of Cambridge, Master of Philosophy}{\textit{Cambridge, UK}}
+      {MPhil Biological (Plant) Sciences}{Oct 2023 - Present}
+    \resumeSubheading
+      {  University of Manchester, Bachelor of Science}{\textit{Manchester, UK}}
+      {  BSc Biotechnology, 1st Class Honours Degree}{Sep 2020 - Jul 2023}
+    \resumeSubheading
+      {  Queen Mary's Grammar School, A-Level}{\textit{Walsall, UK}}
+      { Biology, Physics and Chemistry: A*,A*,A}{Sep 2018 - Jul 2020}
+  \resumeSubHeadingListEnd
+\vspace{-4mm}
+
+
+
+
+%-----------Projects/Leadership Activities-----------------
+\section{\textbf{Project/Work Experience}}
+  \resumeSubHeadingListStart
+ \resumeSubheading
+      {Cambridge Sustain-a-Ball}{\textit{Cambridge, UK}}
+      {   Sustainability Consultant}{Nov 2023 - present}
+      \vspace{0.0mm}
+      \resumeItemListStart
+   \item {\textbf{Sustainability Consulting:} Involved in the advising of sustainability related improvements to various Colleges' May Balls.}
+    \resumeItemListEnd
+    \vspace{-1.0mm}  
+ \resumeSubheading
+      {Operation Wallacea}{\textit{Quintina Roo, Mexico}}
+      {   Research assistant}{Jun 2023 - Jul 2023}
+      \vspace{0.0mm}
+      \resumeItemListStart
+   \item {\textbf{Research Design:} Designed and gained experience in various aspects of conservation biology studies, including data generation and analysis.}
+     \item {\textbf{Field Work:} Took part in a wide variety of in field trials, including habitat density measurements, species tracking and camera trap analysis.}
+    \resumeItemListEnd
+    \vspace{-1.0mm}  
+      \resumeSubheading
+      {MUTIS Ethical Investment Fund}{\textit{Manchester, UK}}
+      {   Quantitative Analyst}{Dec 2022 - May 2023}
+      \vspace{0.0mm}
+      \resumeItemListStart
+   \item {\textbf{Statistical analysis:} Developed knowledge in the use of quantitative methods to generate trading algorithms based on swing or momentum based strategies.}
+     \item {\textbf{Programming:} Learned how to utilize python to generate momentum based trading algorithms, alongside the application of various risk management and position sizing methods to raise P/E values during algorithm training.}
+    \resumeItemListEnd
+    \vspace{-1.0mm}  
+    \resumeSubheading
+     {   Manchester Investment Fund}{\textit{Manchester, UK}}
+      {   Senior Analyst and Committee Member}{Jan 2023 - May 2023}
+      \vspace{-2.0mm}
+      \resumeItemListStart
+   \vspace{2mm}
+    \item {\textbf{Presentation:} Regularly presented analysis on a selection of Tech companies in the Fund's holdings, focussing on technical foundations which justified our investment.}
+    \item {\textbf{Leadership:} Partook in regular committee meetings, discussing topics including future directions of the fund. }
+    \resumeItemListEnd
+    \vspace{-1.0mm}   
+ \resumeSubheading
+      {Ellis Brigham Mountain Sports}{\textit{Salford, UK}}
+      {   Despatch assistant}{Feb 2022 - May 2023}
+      \vspace{0.0mm}
+      \resumeItemListStart
+   \item {\textbf{Order Fulfilment:} Learned how to use various software systems and tools to manage inventory; ensuring that customer orders were processed and shipped  efficiently.}
+     \item {\textbf{Quality control:} Checked that products met the required standards and learned how to identify and report any defects in the products.}
+    \resumeItemListEnd
+    \vspace{-1.0mm}  
+     \resumeSubheading
+      {   AmplifyMe  }{\textit{Manchester Institute of Biotechnology, UK}}
+      {   Investment Banking Global Markets Academy}{Feb 2022 - Apr 2022}
+      \vspace{0.0mm}
+      \resumeItemListStart
+   \item {\textbf{Finance Accelerator:} Introduced to a simulation where I acted as market maker and asset manager, in order to gain experience in stress testing investment and analysis operating models. Identified as a “High Potential candidate”. }
+    \item {\textbf{Global Markets Simulator:} Invited to participate in the Global Markets academy. This involved simulations of complex and realistic scenarios, involving the execution of client trades by adjusting bid and offer quotes on a live board. Recieved a level 4 Diploma for performance.}
+    \resumeItemListEnd
+    \vspace{-1.0mm}  
+    \resumeSubheading
+      {   International Genetically Engineered Machine (iGEM) Competition}{\textit{Manchester Institute of Biotechnology, UK}}
+      {   Laboratory Procedures Leader}{Dec 2021 - Oct 2022}
+      \vspace{-1.0mm}
+      \resumeItemListStart
+   \vspace{1mm}
+    \item {\textbf{Research, Development and Testing:} Worked as part of a self-led student team to research and streamline a novel biotechnology product involved in enhancing the lipid yield of algal photo-bioreactors, followed by in vivo generation and testing of each of the team designed features.}
+    \item {\textbf{Public Speaking and Presentation:} Represented the Manchester iGEM team in presentations carried out during the Paris Grand Jamboree, in front of a panel of Synthetic Biology experts and judges.}
+    \item {\textbf{Leadership:} Appointed head of Laboratory procedures, directly responsible for progress of generating a viable proof of concept. }
+    \resumeItemListEnd
+    \vspace{-1.0mm}   
+     \resumeSubheading
+      {   iGEM global interlaboratory study }{\textit{Manchester Institute of Biotechnology, UK}}
+      {   Co-Author}{Jun 2022 - Aug 2022}
+      \vspace{0.0mm}
+      \resumeItemListStart
+   \item {\textbf{Publishing:} Carried out novel inter-laboratory research into standardising the fluorescence profile of GFP, due to be listed as Co-Author on the seminal paper upon publication.}
+   \item {\textbf{Leadership:} Appointed leader of Laboratory procedures during the inter-laboratory study, again being directly responsible for the progress of the study, and organizing experiments including micro-plate readings. }
+    \resumeItemListEnd
+    \vspace{-1.0mm}  
+    \resumeSubheading
+      {   North Western Biotechnology Initiative}{Manchester, UK}
+      {   "Build a Biotech" Business competition Finalist }{Feb 2022- Apr 2022}
+      \vspace{0.0mm}
+      \resumeItemListStart
+    \item {\textbf{Research}: Analysed the feasiblity of a novel, synthetic biology-based scents company through market research, financial analysis and biological enquiry.}
+    \item {\textbf{Entrepreneurial skills:} Developed a business plan whilst consulting third parties on the validity of the concept. Regularly augmented the business plan based on changing knowledge.}
+    \resumeItemListEnd
+    \vspace{-1.0mm}   
+        \resumeSubheading
+   {   Pets at Home}{\textit{Wolverhampton, UK}}
+   {   Store Assistant}{Feb 2019 - Sep 2021}
+    \vspace{-0.0mm}
+    \resumeItemListStart
+  \item {\textbf{Teamwork:} Gained experience in a fast paced and teamwork orientated environment, leading to qualification as a pet sales advisor through completion of training courses.}
+   \item {\textbf{Customer service:} Developed skills in customer service, interacting with various types of customers and animals. Learned how to handle inquiries, complaints and transactions in a friendly and professional manner.}
+   \resumeItemListEnd
+     \vspace{-1.0mm}  
+    \resumeSubheading
+      {   Funded-Traders.com}{\textit{Online}}
+      {   Trial Proprietary trader}{Jul 2020 - Dec 2020}
+      \vspace{0.0mm}
+      \resumeItemListStart
+    \item {\textbf{Proprietary strategy generation:} Tasked with generating a novel swing trading strategy, based upon technical analysis and the use of non-standard indicators on MetaTrader 5.}
+    \item {\textbf{Discipline and perseverance:} Required to trade at 8pm on each weekday for the 6-month period, and maintain trading psychology through holidays and losing streaks.}
+    \resumeItemListEnd
+    \vspace{-1.0mm}     
+     \resumeSubheading
+      {   NASA build a Rover competition}{\textit{Online}}
+      {   Participant, Private Team}{Jun 2020 - Jul 2020}
+      \vspace{0.0mm}
+      \resumeItemListStart
+    \item {\textbf{Interdisciplinary research:} In order to design a fully mechanical sensor for a NASA Mars rover chassis, our team self-taught the basics of mechanical engineering and 3D CAD during the 3-month competition period.}
+    \item {\textbf{Communication and teamwork:} Required to actively split the design and research workload between the two members, whilst coordinating frequently on tasks relating to 3D-modelling and mechanical engineering calculations.}
+    \resumeItemListEnd
+    \vspace{-1.0mm}   
+  \resumeSubHeadingListEnd
+\vspace{-6mm}
+
+
+
+%-----------Honours and Awards-----------------
+\section{\textbf{Honours and Awards}}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {   University Fees Studentship}{\textit{University of Cambridge}}
+      { MPhil Biological (Plant) Sciences}{Dec 2022}
+      \vspace{-2.0mm}
+    \resumeSubheading
+      {   Gold Medallist}{\textit{Manchester Institute of Biotechnology}}
+      { iGEM Manchester 2022}{Oct 2022}
+      \vspace{-2.0mm}
+    \resumeSubheading
+      {   Gerald Schutt Award for Excellence in Scientific Studies}{\textit{Queen Mary's Grammar School}}
+      { Biology, Chemistry, Physics}{Dec 2019}
+ \vspace{-2mm}
+
+
+%-----------Technical skills-----------------
+\section{\textbf{Skills Summary}}
+    \resumeItemListStart
+     \item {\textbf{Languages}{: Native proficiency in English }}\\
+     \vspace{-10pt}
+    \item{ \textbf{Research}{: Competency in Plasmid design and assembly, use of common lab equipment, aseptic technique and preparation of lab consumables}} \\
+     \vspace{-10pt}
+      \item{ \textbf{Hard skills}{: Machining, Soldering, 3D-modelling and Woodworking}} \\
+    \vspace{-10pt}
+     \item{ \textbf{IT}{: SolidWorks, Excel, PowerPoint, Word, Python, LaTeX and HTML}} \\
+      \vspace{-10pt}
+ \resumeItemListEnd 
+ \vspace{-16pt}
+
+%-----------Interests-----------------
+\section{\textbf{Interests and Hobbies}}
+ \resumeItemListStart
+     \item{Recreational participation in Hiking, Bouldering, swimming and running, on a regular basis} \\
+      \vspace{-10pt}
+      \item{Read a wide range of non-fiction books, including many entrepreneurial and business bestsellers} \\
+   \vspace{-10pt}
+ \resumeItemListEnd 
+ \vspace{-5mm}
+
+%-------------------------------------------
+\section{\textbf{References}}
+ \resumeItemListStart
+     \item{J.Kromdijk (University of Cambridge): jk417@cam.ac.uk} \\
+      \vspace{-10pt}
+     \item{J.Miyan (University of Manchester): j.miyan@ manchester.ac.uk} \\
+      \vspace{-9pt}
+      \item{S.Williams (Pets at Home): 07925135007} \\
+      \vspace{-10pt}
+   \item{G.K.Collins (Queen Mary’s Grammar School): gk-collins@qmgs.walsall.sch.uk , 01922 720696} \\
+   \vspace{-5pt}
+    \item{\textit{Further references available on request}} 
+   \vspace{-10pt}
+ \resumeItemListEnd 
+ \vspace{-3mm}
+
+%-------------------------------------------
+\end{document}
